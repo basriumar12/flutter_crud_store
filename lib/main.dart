@@ -25,9 +25,7 @@ class _HomeState extends State<MyApp> {
   new GlobalKey<RefreshIndicatorState>();
 
 
-
-
-
+  //future for refresh
   Future<List> getData() async {
     final response = await http.get("${Constant.url}getdata.php");
     print('data url ${Constant.url}getdata.php  ${response.body}');
@@ -93,7 +91,7 @@ class _HomeState extends State<MyApp> {
           await Future.delayed(Duration(seconds: 1));
           addData();
           setState(() {
-            
+
           });
         },
         child: new FutureBuilder<List>(
