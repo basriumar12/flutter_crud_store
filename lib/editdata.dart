@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import './main.dart';
 import './constant.dart';
 
+//edit page
 class EditData extends StatefulWidget {
   final List list;
   final int index;

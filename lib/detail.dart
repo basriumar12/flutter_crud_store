@@ -4,6 +4,7 @@ import './editdata.dart';
 import 'package:http/http.dart' as http;
 import './main.dart';
 
+//detail page
 class Detail extends StatefulWidget {
   List list;
   int index;
